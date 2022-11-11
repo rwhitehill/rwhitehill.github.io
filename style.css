@@ -1,0 +1,78 @@
+html, body {
+    justify-content: center;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    flex-direction: column;
+    display: flex;
+}
+
+.topnav {
+    flex-direction: row;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #000000; 
+    padding: 14px 16px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.topnav a.active {
+    background-color: lightblue;/*#D3D3D3;*/
+    font-weight: bold;  
+}
+
+.profile-picture {
+    border-radius: 50%
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.section {
+    display: flex;
+    width: 50%;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 15px 10px;
+
+    border-left: 10px solid black;
+    background-color: #D3D3D3;
+}
+
+.description {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container {
+    flex-direction: row;
+    display: flex;
+}
+
+.left, .right {
+    max-width: 45%;
+    margin: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left {
+    align-items: center;
+}
+
+
