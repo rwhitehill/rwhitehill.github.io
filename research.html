@@ -33,9 +33,73 @@
         <h3 class="subsection">Collinear Factorization and Parton Distribution Functions</h3>
         <p>
             QCD is an inherently nonperturbative theory, but in some kinematic regions accessible at particle accelerators and colliders, we can factorize the hadronic physics in terms of a hard scattering part, where we can imagine that interactions with the proton occur with a quark or gluon moving collinearly with the nucleon, and quantum correlation functions.
-            In particular, the simplest quantum correlation functions that capture the longitudinal structure of nucleons are the so-called parton distribution functions (PDFs).
+            For example, in deep inelastic scattering, we can write the hadronic cross section in the form: 
+            $$ {\rm d}\sigma = H \otimes f, $$
+            where \(f\) represents the so-called parton distribution functions (abbreviated as PDFs [not to be confused with the file type!]), which are the simplest set of quantum correlation functions and capture the longitudinal structure of nucleons.
             An interpretation of these functions is somewhat difficult.
-            To first order, at least for unpolarized scattering experiments, we can interpret these PDFs as probability distributions for the different quark flavors to be found carrying a particular momentum fraction \(x\).
+            To first order, for the unpolarized ones, we can interpret PDFs as probability distributions for the different quark flavors to be found carrying some fraction of the nucleon's total momentum.
+            There are a number interesting bases that we can describe these PDFs in, where a few are listed below:
+            $$
+            \begin{eqnarray}
+            \mbox{unpolarized:}&~f &= f_{\rightarrow} + f_{\leftarrow} \\
+            \mbox{helicity:}&~\Delta f &= f_{\rightarrow} - f_{\leftarrow} \\
+            \mbox{transversity:}&~\delta_{T} f &= f_{\uparrow} - f_{\downarrow}
+            \end{eqnarray}
+            $$
+        </p>
+        <p>
+            One of the cruxes of this collinear factorization including PDFs is the fact that PDFs are nonperturbative artifacts in the theory.
+            That is, we cannot determine them from first principles across all kinematics in a perturbative scheme.
+            There are a couple approaches that we can take to determine these functions.
+            The first is a noneperturbative approach such as lattice QCD methods.
+            These are still quite young and actively in development.
+            Another approach is to feed empirical data for cross sections or other observables and fit the PDFs inside the collinear factorization framework that was mentioned earlier to match the data.
+            Ultimately, the lattice approach is more fundamental, but the statistical methods are valid and more well-developed at this point and will serve as benchmarks for the lattice calculations.
+        </p>
+        <h2 class="section">Past Projects</h2>
+        <p>
+            This is a summary of some of the projects that I have worked on as an undergraduate student.
+        </p>
+        <h3 class="subsection">Accessing gluon polarization with high-\(P_T\) hadrons in SIDIS</h3>
+        <p>
+            This project relates to the section above on collinear factorization and PDFs.
+            The broad motivation for this project comes from a problem coined the proton spin crisis/puzzle (dependening on your taste for drama).
+            Essentially, the problem stems from the fact that many experiments have told us that the proton behaves as if it is a spin-1/2 particle.
+            A simple model of the proton as being made up of only a \(uud\) triplet can easily explain this.
+            When adding up the spins of these quarks, we simply define the proton to be the system state with total spin-1/2, but this naive picture breaks down quickly once we introduce the notion that quark-antiquark pairs can be created from the vacuum (i.e. the gluon mediated interactions between the "valence" quarks leads to these pairs).
+            The picture is not so simple then: the proton is a complex soup of valence quarks, sea quarks, and gluons.
+            This implies then that
+            $$
+            \begin{align}
+            \frac{1}{2} = \frac{1}{2} \Delta \Sigma + \Delta G + L,
+            \end{align}
+            $$
+            Still, one may expect that the proton is in an S-wave state, meaning that this expression is dominated by the \( \Delta \Sigma \) term, but this has been debunked by experimental measurements and recent theoretical work.
+            Indeed, the quark contribution is surprisingly small (only some 30% of the total proton spin), leaving a large portion of its spin to be derived from the gluon spin and orbital angular momentum (from both the quarks and gluons).
+        </p>
+        <p>
+            This project, as may be clear from the title, aims to contribute to our understanding of the gluon spin contribution, at least indirectly.
+            Recent global QCD analysis by the Jefferson Lab Angular Momentum (JAM) collaboration found that the gluon helicity PDF (denoted \( \Delta g \)) is not well constrained by current experimental data.
+            This is an issue since we calculate the gluon spin contribution as follows:
+            $$
+            \Delta G = \int_{x_{\rm min}}^{1} \Delta g \, {\rm d}x
+            $$
+            Thus, it is imperative that we find data sets that are sensitive to the gluon helicity PDF and are capable of constraining it better.
+            For this project, we analyzed the double spin asymmetry in semi-inclusive DIS (SIDIS) process for large transverse momentum of the produced hadrons (which is relevant since this is produced from hard gluon radiations at the parton level and hence allows access to the gluon PDF in collinear factorization).
+            In particular, we attempted to answer the following questions:
+            <ul>
+                <li>How sensitive is this process to the gluon channel?</li>
+                <li>What experimental conditions are optimal to measure this observable (if it is even large enough to be measured)?</li>
+                <li>How do the uncertainties look for this observable (both statistical and those from uncertainties in the gluon helicity PDF)?</li>
+            </ul>
+        </p>
+        <p>
+        If you would like to understand this project better (i.e. more formally or deeply) here are a few resources:
+        <ul>
+            <li><a href="https://arxiv.org/abs/2210.12295">arXiv paper</a></li>
+            <li>CAM Seminar [<a href="CAM_seminar_slides.pdf">slides</a>]</li>
+            <li>WSU Physics Seminar [<a href="WSU_seminar_slides.pdf">slides</a>] [<a href="https://youtu.be/jbMymPaAC84">video</a>]</li>
+        </ul>
         </p>
 </div>
 </body>
