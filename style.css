@@ -42,19 +42,26 @@ html, body {
 .section {
     display: flex;
     width: 50%;
-    margin-left: 5px;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    margin: 15px 0 15px 1%;
     padding: 15px 10px;
 
     border-left: 10px solid black;  
     background-color: #D3D3D3;
 }
 
+.subsection {
+    flex-direction: column;
+    display: flex;
+    margin: 0 2% 0 2%;
+}
+
+.subsection-title {
+    margin: 3% 1% 3% 1%;
+}
+
 .description {
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 2% 10% 0 10%;
 }
 
 .container {
@@ -81,4 +88,11 @@ html, body {
     margin-right: 5%;
 }
 
+ul {
+    margin: 5px 0 5px 0;
+}
+
+p {
+    margin: 1% 0 0 1%;
+}
 
