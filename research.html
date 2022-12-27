@@ -19,95 +19,65 @@
     During my undergraduate in physics I have been involved in a number of research projects, ranging over a number of fields in physics, including classical mechanics, thermodynamics, and nuclear physics.
     At the moment, I am primarily interested in hadronic physics and QCD.
     The sections below summarize some more specific information relating to these interests as well as some projects I have been involved in.
-    Additionally, there is a sections describing my previous projects along with publications, posters, and presentations I have prepared relating to these.
+    Additionally, there is a section describing my previous projects along with publications, posters, and presentations I have prepared relating to these.
     </p>
         <h2 class="section">Hadronic and Nuclear Stucture</h2>
-        <!--
         <div class="subsection">
         <p>
             Nuclear matter is anything made up of protons and neutrons.
-            During the 20th century, it became readily apparent that our picture of these nucleons as fundamental particles is inaccurate of reality.
-            Indeed, a model of hadronic matter, encompassing nuclear matter, composed of quarks with gluons, which are the gauge bosons in QCD and mediate the strong nuclear force, binding together these hadrons.
-            As with anything that is not fundamental, there is an impetus to understand the emergent global properties arising from the behavior of its constituents.
-            This is certainly true in the field of nuclear physics.
+            During the 20th century, it became readily apparent that our picture of these nucleons as fundamental particles is inaccurate.
+            Indeed, the model of hadronic matter, encompassing nuclear matter, being composed of quarks and gluons arose from the work of Gell-Mann and Feynman and was confirmed by the original deep inelastic scattering (DIS) experiments at the Stanford Linear Accelerator (SLAC).
+            Because the nucleons are not fundamental objects, their properties are not just empirically observed facts in the Standard Model.
+            Instead, the global properties of hadrons emerge from their constituent partonic structure.
+            This line of reasoning then opens the door to a whole slew of phenomenological questions.
+            Essentially, the broad question is simply this: how do we reconcile the seemingly inherent properties of nucleons and hadron
             A few open problems that I have been exposed to and found intriguing are discussed below.
         </p>
         </div>
-        -->
         <h3 class="subsection-title">Collinear Factorization and Parton Distribution Functions</h3>
-        <!--
         <div class="subsection">
         <p>
-            QCD is an inherently nonperturbative theory, but in some kinematic regions accessible at particle accelerators and colliders, we can factorize the hadronic physics in terms of a hard scattering part, where we can imagine that interactions with the proton occur with a quark or gluon moving collinearly with the nucleon, and quantum correlation functions.
-            For example, in deep inelastic scattering (DIS), we can write the hadronic cross section in the form: 
-            $$ {\rm d}\sigma = H \otimes f, $$
-            where \(f\) represents the so-called parton distribution functions (abbreviated as PDFs [not to be confused with the file type!]), which are the simplest set of quantum correlation functions and capture the longitudinal structure of nucleons.
-            An interpretation of these functions is somewhat difficult.
-            To first order, for the unpolarized ones, we can interpret PDFs as probability distributions for the different quark flavors to be found carrying some fraction of the nucleon's total momentum.
-            There are a number interesting bases that we can describe these PDFs in, where a few are listed below:
+            For the phenomenological studies being done at high energy colliders and accelerators, the strong coupling becomes small enough such that QCD is perturbative.
+            At these scales, so-called factorization theorems have been derived, which allows the calculation of the hadronic cross section to be broken down into a convolution between the partonic hard scattering, partonic cross section and the appropriate quantum correlation functions (QCFs).
+            For example, in inclusive DIS (\(\ell N \rightarrow \ell' X \)), where \(X\) represents the unobserved hadronic final state particles, we can calculate the hadronic cross section as
             $$
-            \begin{eqnarray}
-            \mbox{unpolarized:}&~f &= f_{\rightarrow} + f_{\leftarrow} \\
-            \mbox{helicity:}&~\Delta f &= f_{\rightarrow} - f_{\leftarrow} \\
-            \mbox{transversity:}&~\delta_{T} f &= f_{\uparrow} - f_{\downarrow}
-            \end{eqnarray}
+            \frac{ d\sigma}{ dx \, dQ^2 } = \sum_{i} \int_{\xi_{\min}}^{1} \frac{d\xi}{\xi} \frac{ d\hat{\sigma}_i }{ d\hat{x} \, dQ^2} f_{i}(\xi,Q^2),
             $$
+            where \(f\) is the unpolarized parton distribution function (PDF), which are (in non-interacting physics) number densities on the momentum fraction \(\xi\) of parton \(i\) inside a hadron.
+            A semi-classical interpretation of this factorization is then as follows: the total cross section is just a weighted sum of direct scattering events from quarks inside a given hadron, where the weights are the PDFs.
         </p>
         <p>
-            One of the cruxes of this collinear factorization including PDFs is the fact that PDFs are nonperturbative artifacts in the theory.
-            That is, we cannot determine them from first principles across all kinematics in a perturbative scheme.
-            There are a couple approaches that we can take to determine these functions.
-            The first is a noneperturbative approach such as lattice QCD methods.
-            These are still quite young and actively in development.
-            Another approach is to feed empirical data for cross sections or other observables and fit the PDFs inside the collinear factorization framework that was mentioned earlier to match the data.
-            Ultimately, the lattice approach is more fundamental, but the statistical methods are valid and more well-developed at this point and will serve as benchmarks for the lattice calculations.
+            The cross sections are not generally interesting: it is the PDFs and other QCFs that contain the physics.
+            But these QCFs are generally nonperturbative.
+            These factorization theorems are then interesting because we can match these PDFs to experimental data from scattering experiments, which then allows us to extract the physics from the PDFs.
+            Therefore, the development of these factorization theorems is interesting because of their phenomenological utility.
+            Additionally, the results generated from factorization theorems serves as a good benchmark for lattice calculations, which solve QCD problems at low energies.
         </p>
         </div>
-        -->
         <h2 class="section">Past Projects</h2>
         <div class="subsection"> 
-        <!--
         <p>
-            This is a summary of some of the projects that I have worked on as an undergraduate student.
+            The sections below give a brief summary of the past projects I have worked on and links to some associated resources.
         </p>
         </div>
         <h3 class="subsection-title">Accessing gluon polarization with high-\(P_T\) hadrons in SIDIS</h3>
         <div class="subsection">
         <p>
-            This project relates to the section above on collinear factorization and PDFs.
-            The broad motivation for this project comes from a problem coined the proton spin crisis/puzzle (dependening on your taste for drama).
-            Essentially, the problem stems from the fact that many experiments have told us that the proton behaves as if it is a spin-1/2 particle.
-            A simple model of the proton as being made up of only a \(uud\) triplet can easily explain this.
-            When adding up the spins of these quarks, we simply define the proton to be the system state with total spin-1/2, but this naive picture breaks down quickly once we introduce the notion that quark-antiquark pairs can be created from the vacuum (i.e. the gluon mediated interactions between the "valence" quarks leads to these pairs).
-            The picture is not so simple then: the proton is a complex soup of valence quarks, sea quarks, and gluons.
-            This implies then that
-            $$
-            \begin{align}
-            \frac{1}{2} = \frac{1}{2} \Delta \Sigma + \Delta G + L,
-            \end{align}
-            $$
-            Still, one may expect that the proton is in an S-wave state, meaning that this expression is dominated by the \( \Delta \Sigma \) term, but this has been debunked by experimental measurements and recent theoretical work.
-            Indeed, the quark contribution is surprisingly small (only some 30% of the total proton spin), leaving a large portion of its spin to be derived from the gluon spin and orbital angular momentum (from both the quarks and gluons).
+            This project is related to the section above on collinear factorization and PDFs.
+            We focused on the semi-inclusive DIS process \( \ell N \rightarrow \ell' h X \), and its ability to constrain the gluon helicity dependent PDF, which is directly related to the gluon spin contribution to the proton.
+            This is of particular interest in the scope of the proton spin puzzle, which aims to understand how the angular momentum of the proton is distributed between the spin and orbital angular momentum of its quarks and gluons.
         </p>
         <p>
-            This project, as may be clear from the title, aims to contribute to our understanding of the gluon spin contribution, at least indirectly.
-            Recent global QCD analysis by the Jefferson Lab Angular Momentum (JAM) collaboration found that the gluon helicity PDF (denoted \( \Delta g \)) is not well constrained by current experimental data.
-            This is an issue since we calculate the gluon spin contribution as follows:
-            $$
-            \Delta G = \int_{x_{\rm min}}^{1} \Delta g \, {\rm d}x
-            $$
-            Thus, it is imperative that we find data sets that are sensitive to the gluon helicity PDF and are capable of constraining it better.
-            For this project, we analyzed the double spin asymmetry in semi-inclusive DIS (SIDIS) process for large transverse momentum of the produced hadrons (which is relevant since this is produced from hard gluon radiations at the parton level and hence allows access to the gluon PDF in collinear factorization).
-            In particular, we attempted to answer the following questions:
+        In particular, here are a few of the questions we attempted to answer in our study:
         </p>
         <ul>
             <li>How sensitive is this process to the gluon channel?</li>
-            <li>What experimental conditions are optimal to measure this observable (if it is even large enough to be measured)?</li>
+            <li>Can the JLab accelerator or future Electron-Ion Collider produce kinematics where the double spin asymmetry is sizable enough to be measured</li>
+            <li>Does the double spin asymmetry provide a better ability than other scattering experiments to constrain the gluon helicity PDF?</li>
             <li>How do the uncertainties look for this observable (both statistical and those from uncertainties in the gluon helicity PDF)?</li>
         </ul>
-        -->
         <p>
-        If you would like to understand this project better (i.e. more formally or deeply) here are a few resources:
+        Extra resources:
         </p>
         <ul>
             <li><a href="https://arxiv.org/abs/2210.12295">arXiv paper</a></li>
@@ -115,6 +85,42 @@
             <li>WSU Physics Seminar [<a href="WSU_seminar_slides.pdf">slides</a>] [<a href="https://www.youtube.com/watch?v=jbMymPaAC84">video</a>]</li>
             <li>Research Experience for Undergraduates Poster and Presentation [<a href="https://education.jlab.org/ugresearch/21-29.html">link</a>]</li>
             <li>Science Undergraduate for Laboratory Internships Poster and Poster [<a href="SULI_poster-presentation.pdf">slides</a>]
+        </ul>
+        </div>
+        <h3 class='subsection-title'>Developing perfectly matched layer method for heat-diffusion equation</h3>
+        <div class='subsection'>
+        <p>
+        When solving a particular partial differential equation, the unique solution is determined by the imposition of boundary conditions.
+        This means that it is critical to impose the correct boundary conditions such that a physical situation is properly modeled.
+        In particular, for this project we were interested in looking at the boundary conditions allowing heat to freely propagate at the boundaries of the medium.
+        Analytically, this is simple to accomodate because we can consider domains that are infinite, but numerically, we are constrained to work on a finite domain.
+        This leads to the question of how to impose boundary conditions to emulate free boundaries, which allow heat to propagate infinitely from the region of interest.
+        </p>
+        <p>
+        There are solutions to this problem for the propagation of electromagnetic (EM) waves which utilize "perfectly matched layers".
+        That is, we extend the domain such that the EM waves are damped beyond the physical domain of interest.
+        At the time of this writing, there is no widely known or accepted perfectly matched layer method for the heat-diffusion equation that implements free boundaries.
+        Complications for this differential equation arise primarily because it is first-order in time and second-order in space.
+        The development of an effective numerical approach to solving this problem is of great interest in fields such as biological physics.
+        <ul>
+            <li><a href='https://scholars.fhsu.edu/sacad_2020/92/'>Poster</a></li>
+        </ul>
+        </p>
+        </div>
+        <h3 class='subsection-title'>Survey of projectile motion under gravitational, drag, and magnus forces</h3>
+        <div class='subsection'>
+        <p>
+        There is a common claim made by baseball players that good curveballs seem to break suddenly in flight.
+        For this project, we implemented a simple differential equation solver to solve the classical equation of motion, accounting for the typical forces on projectiles of gravity and air resistance along with the force produced from the spin of the baseball in a fluid (otherwise known as the magnus force).
+        From this, we determined that the trajectory of a pitch is smooth, as expected.
+        That is, there are no kinks in (discontinuities in the derivative of) the acceleration of the baseball.
+        To naively imitate the sight of a batter, we projected the 3D trajectory of the baseball onto a 2D plane.
+        From this, we also did not find any kinks in the projected acceleration of the baseball, which is analytically expected since there is no time dependence on the projections that were implemented.
+        The next approach taken was to implement a machine learning program that would act as a batter, meaning that it would predict the trajectory of a baseball given some initial conditions and sparse updates along the actual trajectory of the ball.
+        This approach ultimately did not reach fruition, but it was hoped that the machine would essentially be "tricked" in the same way that a human batter is by a curveball, implying that the effect of a sharp break is only an illusion caused by the discrete nature of tracking a pitch paired with the short processing time available to a batter.
+        </p>
+        <ul>
+            <li><a href='https://github.com/CD3/BaseballSimulator'>Github</a></li>
         </ul>
         </div>
 </div>
