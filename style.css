@@ -96,4 +96,12 @@ p {
     margin: 1% 0 0 1%;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: gold;    
+}
+
 
