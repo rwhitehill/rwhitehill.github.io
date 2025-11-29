@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard Whitehill — Home</title>
+  <style>
+    body, header, .about-container, nav, .dropdown-content {
+        transition: background 0.5s ease, color 0.5s ease;
+    }
+    body.dark .socials a:hover img {
+        transition: filter 0.5s ease;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7faff;
+      color: #333;
+    }
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #e4f0ff;
+      border-bottom: 1px solid #c8dfff;
+    }
+    .site-name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #1f4fa8;
+    }
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      position: relative;
+    }
+    nav a {
+      color: #1f4fa8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .about-container {
+        display: flex;
+        gap: 2rem;
+        max-width: 900px;
+        margin: 0rem auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+        align-items: center;
+    }
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      z-index: 1;
+      right: 0;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    /* Banner */
+    .banner {
+      width: 100%;
+      height: 100px;
+      background-image: url('banner.jpg'); /* replace with actual image */
+      background-size: cover;
+      background-position: center;
+    }
+    .banner * {
+        color: inherit !important;
+        opacity: 1 !important;
+    }
+    /* About Section */
+    .about-container {
+      display: flex;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .headshot {
+      width: 300px;
+      height: 300px;
+      border-radius: 100px;
+      background: #ddd;
+      object-fit: cover;
+    }
+    .about-text h2 {
+      margin-top: 0;
+      color: #1f4fa8;
+    }
+    .socials {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+    .socials a {
+      padding: 0;
+      border-radius: 0px;
+      background: none;
+      text-decoration: none;
+      color: inherit;
+      font-weight: normal;
+    }
+      /* Hover glow effect */
+    nav a:hover,
+    .dropdown-content a:hover,
+    .socials a:hover img {
+      filter: drop-shadow(0 0 6px rgba(255,215,0,0.8)) drop-shadow(0 0 10px rgba(255,223,100,0.6));
+      transform: scale(1.05);
+    }
+    /* Dark mode styles */
+    body.dark {
+        background: #1a1a1a;
+        color: #e8e8e8;
+    }
+    body.dark .site-name {
+        color: #cbd8ff;
+    }
+    body.dark .about-text h2 {
+        color: #cbd8ff;
+    }
+    body.dark header {
+        background: #111;
+        border-bottom: 1px solid #333;
+        color: #e8e8e8;
+    }
+    body.dark nav a {
+        color: #cbd8ff;
+    }
+    body.dark .dropdown-content {
+        background: #2a2a2a;
+    }
+    body.dark .about-container {
+        background: #2a2a2a;
+        box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+    }
+    body.dark .socials a:hover img {
+        filter:
+            drop-shadow(0 0 6px rgba(255,215,0,0.8))
+            drop-shadow(0 0 10px rgba(255,215,0,0.5));
+    }
+    .socials a img {
+        width: 24px;
+        height: 24px;
+        transition: filter 0.5s ease;
+    }
+
+    body.dark .socials a img {
+        filter: invert(1) brightness(1.2);
+    }
+</style>
+</head>
+<body>
+
+    <!-- Header snippet: place in <body> -->
+    <header>
+        <div style="display:flex; align-items:center; gap:1rem;">
+            <div class="site-name">Richard Whitehill</div>
+            <!-- Dark mode toggle button -->
+            <button id="theme-toggle" style="padding:0.4rem 0.7rem; border-radius:6px; border:none; background:none; cursor:pointer; font-size:1rem;">
+                🌓
+            </button>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#info">Information</a>
+            <div class="dropdown">
+                <a href="#research">Research ▾</a>
+                <div class="dropdown-content">
+                    <a href="#publications">Publications</a><br>
+                    <a href="#presentations">Presentations</a>
+                </div>
+            </div>
+            <a href="#personal">Personal</a>
+        </nav>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.getElementById('theme-toggle');
+
+            // Set initial icon based on current mode
+            toggleBtn.textContent = document.body.classList.contains('dark') ? '🌞' : '🌚';
+
+            toggleBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark');
+                // Switch icon
+                toggleBtn.textContent = document.body.classList.contains('dark') ? '🌞' : '🌚';
+            });
+        });
+    </script>
+
+  <div class="banner"></div>
+
+  <section class="about-container" id="about">
+    <img src="headshot.jpeg" alt="Headshot" class="headshot" />
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+      Hi, welcome to my webpage! I am a second-year physics Ph.D. student at Old Dominion University in Norfolk, VA, working on various research projects through the Jefferson Lab theory center. In Spring 2023, I graduated from Wichita State University with a Bachelor's degree in physics and math along with a minor in computer science. I possess a curiosity that is seldom satisfied and drives my passion for learning about and exploring the world around me.
+        
+      </p>
+      <div class="socials">
+        <a href="https://inspirehep.net/authors/2169579" target="_blank" title="InspireHEP">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/inspire.svg" alt="InspireHEP" style="width:24px; height:24px;">
+        </a>
+        <a href="https://github.com/rwhitehill" target="_blank" title="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="width:24px; height:24px;">
+        </a>
+        <a href="https://www.linkedin.com/in/richard-whitehill-76b162338" target="_blank" title="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:24px; height:24px;">
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
