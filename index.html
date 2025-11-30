@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Richard Whitehill — Home</title>
+
   <style>
+    /* ------------------------ General Styles ------------------------ */
     body, header, .about-container, nav, .dropdown-content {
-        transition: background 0.5s ease, color 0.5s ease;
-    }
-    body.dark .socials a:hover img {
-        transition: filter 0.5s ease;
+      transition: background 0.5s ease, color 0.5s ease;
     }
 
     body {
@@ -19,7 +18,17 @@
       background: #f7faff;
       color: #333;
     }
-    /* Header */
+
+    a {
+      text-decoration: none;
+    }
+    a:hover, a:active {
+      text-decoration: none;
+      filter: drop-shadow(0 0 6px rgba(255,215,0,1.0));
+      transform: scale(1.05);
+    }
+
+    /* ------------------------ Header ------------------------ */
     header {
       display: flex;
       justify-content: space-between;
@@ -28,67 +37,40 @@
       background: #e4f0ff;
       border-bottom: 1px solid #c8dfff;
     }
+
     .site-name {
       font-size: 1.8rem;
       font-weight: bold;
       color: #1f4fa8;
     }
+
     nav {
       display: flex;
       gap: 1.5rem;
       position: relative;
     }
+
     nav a {
       color: #1f4fa8;
-      text-decoration: none;
       font-weight: bold;
     }
-    .about-container {
-        display: flex;
-        gap: 2rem;
-        max-width: 900px;
-        margin: 0rem auto;
-        padding: 2rem;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 
-        align-items: center;
+    nav a:hover {
+      filter: drop-shadow(0 0 6px rgba(255,215,0,0.8));
+      transform: scale(1.05);
     }
-    /* Dropdown */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background: white;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      z-index: 1;
-      right: 0;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    /* Banner */
+
+    /* ------------------------ Banner ------------------------ */
     .banner {
       width: 100%;
       height: 100px;
-      background-image: url('banner.jpg'); /* replace with actual image */
+      background-image: url('banner.jpg');
       background-size: cover;
       background-position: center;
     }
-    .banner * {
-        color: inherit !important;
-        opacity: 1 !important;
-    }
-    /* About Section */
-    .about-container {
-      display: flex;
-      gap: 2rem;
+
+    /* ------------------------ Section Cards ------------------------ */
+    .section-card, .about-container {
       max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
@@ -96,144 +78,255 @@
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
+    .section-card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-card h2, .about-text h2 {
+      margin-top: 0;
+      color: #1f4fa8;
+    }
+
+    #information p {
+      margin: 0.3rem 0;
+    }
+
+    /* ------------------------ About Me ------------------------ */
+    .about-container {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
     .headshot {
       width: 300px;
       height: 300px;
       border-radius: 100px;
-      background: #ddd;
       object-fit: cover;
+      background: #ddd;
     }
-    .about-text h2 {
-      margin-top: 0;
-      color: #1f4fa8;
-    }
+
     .socials {
       margin-top: 1rem;
       display: flex;
       gap: 1rem;
     }
-    .socials a {
-      padding: 0;
-      border-radius: 0px;
-      background: none;
-      text-decoration: none;
-      color: inherit;
-      font-weight: normal;
+
+    .socials a img {
+      width: 24px;
+      height: 24px;
+      transition: filter 0.5s ease;
     }
-      /* Hover glow effect */
-    nav a:hover,
-    .dropdown-content a:hover,
+
     .socials a:hover img {
-      filter: drop-shadow(0 0 6px rgba(255,215,0,0.8)) drop-shadow(0 0 10px rgba(255,223,100,0.6));
+      filter: drop-shadow(0 0 6px rgba(255,215,0,0.8));
       transform: scale(1.05);
     }
-    /* Dark mode styles */
+
+    /* ------------------------ Research Dropdowns ------------------------ */
+    .research-dropdowns {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 100%;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .dropdown-box {
+      background: #f9fbff;
+      border: 1px solid #c8dfff;
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .dropdown-box summary {
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #1f4fa8;
+      user-select: none;
+    }
+
+    .dropdown-content {
+      margin-top: 0.8rem;
+      padding-left: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* ------------------------ Dark Mode ------------------------ */
     body.dark {
-        background: #1a1a1a;
-        color: #e8e8e8;
+      background: #1a1a1a;
+      color: #e8e8e8;
     }
-    body.dark .site-name {
-        color: #cbd8ff;
-    }
-    body.dark .about-text h2 {
-        color: #cbd8ff;
-    }
+
     body.dark header {
-        background: #111;
-        border-bottom: 1px solid #333;
-        color: #e8e8e8;
+      background: #111;
+      border-bottom: 1px solid #333;
     }
-    body.dark nav a {
-        color: #cbd8ff;
+
+    body.dark .site-name,
+    body.dark nav a,
+    body.dark .about-text h2,
+    body.dark .section-card h2 {
+      color: #cbd8ff;
     }
-    body.dark .dropdown-content {
-        background: #2a2a2a;
-    }
+
+    body.dark .section-card,
     body.dark .about-container {
-        background: #2a2a2a;
-        box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+      background: #2a2a2a;
+      box-shadow: 0 2px 6px rgba(255,255,255,0.05);
     }
-    body.dark .socials a:hover img {
-        filter:
-            drop-shadow(0 0 6px rgba(255,215,0,0.8))
-            drop-shadow(0 0 10px rgba(255,215,0,0.5));
+
+    body.dark .dropdown-box {
+      background: #222;
+      border-color: #555;
+      box-shadow: 0 2px 6px rgba(255,255,255,0.05);
     }
-    .socials a img {
-        width: 24px;
-        height: 24px;
-        transition: filter 0.5s ease;
+
+    body.dark .dropdown-box summary {
+      color: #cbd8ff;
+    }
+
+    body.dark .dropdown-content {
+      color: #e8e8e8;
     }
 
     body.dark .socials a img {
-        filter: invert(1) brightness(1.2);
+      filter: invert(1) brightness(1.2);
     }
-</style>
+
+    /* ------------------------ Links in Content ------------------------ */
+    body.dark .section-card a,
+    body.dark .content-section a:link {
+      color: #a8c4ff;
+    }
+
+    body.dark .section-card a:visited,
+    body.dark .content-section a:visited {
+      color: #c4a8ff;
+    }
+
+    body.dark a:hover {
+      color: #d0e0ff;
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- Header snippet: place in <body> -->
-    <header>
-        <div style="display:flex; align-items:center; gap:1rem;">
-            <div class="site-name">Richard Whitehill</div>
-            <!-- Dark mode toggle button -->
-            <button id="theme-toggle" style="padding:0.4rem 0.7rem; border-radius:6px; border:none; background:none; cursor:pointer; font-size:1rem;">
-                🌓
-            </button>
-        </div>
+<!-- HEADER -->
+<header>
+  <div style="display:flex; align-items:center; gap:1rem;">
+    <div class="site-name">Richard Whitehill</div>
+    <button id="theme-toggle" style="padding:0.4rem 0.7rem; border-radius:6px; border:none; background:none; cursor:pointer; font-size:1rem;">
+      🌓
+    </button>
+  </div>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#info">Information</a>
-            <div class="dropdown">
-                <a href="#research">Research ▾</a>
-                <div class="dropdown-content">
-                    <a href="#publications">Publications</a><br>
-                    <a href="#presentations">Presentations</a>
-                </div>
-            </div>
-            <a href="#personal">Personal</a>
-        </nav>
-    </header>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#information">Information</a>
+    <a href="#research">Research</a>
+    <a href="#personal">Personal</a>
+  </nav>
+</header>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const toggleBtn = document.getElementById('theme-toggle');
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('theme-toggle');
 
-            // Set initial icon based on current mode
-            toggleBtn.textContent = document.body.classList.contains('dark') ? '🌞' : '🌚';
+  toggleBtn.textContent = document.body.classList.contains('dark') ? '🌞' : '🌚';
 
-            toggleBtn.addEventListener('click', () => {
-                document.body.classList.toggle('dark');
-                // Switch icon
-                toggleBtn.textContent = document.body.classList.contains('dark') ? '🌞' : '🌚';
-            });
-        });
-    </script>
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    toggleBtn.textContent = document.body.classList.contains('dark') ? '🌞' : '🌚';
+  });
+});
+</script>
 
-  <div class="banner"></div>
+<div class="banner"></div>
 
-  <section class="about-container" id="about">
-    <img src="headshot.jpeg" alt="Headshot" class="headshot" />
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
+<!-- ABOUT ME -->
+<section class="about-container" id="about">
+  <img src="headshot.jpeg" alt="Headshot" class="headshot" />
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
       Hi, welcome to my webpage! I am a second-year physics Ph.D. student at Old Dominion University in Norfolk, VA, working on various research projects through the Jefferson Lab theory center. In Spring 2023, I graduated from Wichita State University with a Bachelor's degree in physics and math along with a minor in computer science. I possess a curiosity that is seldom satisfied and drives my passion for learning about and exploring the world around me.
-        
-      </p>
-      <div class="socials">
-        <a href="https://inspirehep.net/authors/2169579" target="_blank" title="InspireHEP">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/inspire.svg" alt="InspireHEP" style="width:24px; height:24px;">
-        </a>
-        <a href="https://github.com/rwhitehill" target="_blank" title="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="width:24px; height:24px;">
-        </a>
-        <a href="https://www.linkedin.com/in/richard-whitehill-76b162338" target="_blank" title="LinkedIn">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:24px; height:24px;">
-        </a>
-      </div>
+    </p>
+    <div class="socials">
+      <a href="https://inspirehep.net/authors/2169579" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/inspire.svg">
+      </a>
+      <a href="https://github.com/rwhitehill" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg">
+      </a>
+      <a href="https://www.linkedin.com/in/richard-whitehill-76b162338" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg">
+      </a>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- INFORMATION SECTION -->
+<section class="section-card" id="information">
+  <h2>Information</h2>
+  <p><strong>Email (ODU):</strong> <a href="mailto:rwhit058@odu.edu">rwhit058@odu.edu</a></p>
+  <p><strong>Email (JLab):</strong> <a href="mailto:whiteric@jlab.org">whiteric@jlab.org</a></p>
+  <p><strong>Office:</strong> OCNPS 345?</p>
+  <p><strong>CV:</strong> <a href="cv.pdf" target="_blank">Download my CV</a></p>
+  <p>Additional contact info, office hours, or academic details can go here.</p>
+</section>
+
+<!-- RESEARCH SECTION -->
+<section class="section-card" id="research">
+  <h2>Research</h2>
+
+  <div class="research-dropdowns">
+    <details class="dropdown-box">
+      <summary>Publications</summary>
+      <div class="dropdown-content">
+        <ul>
+          <li>A. Bacchetta, M. Cerutti, L. Gamberg, <b>R. M. Whitehill</b>, In preparation (2026)</li>
+          <li><b>R. M. Whitehill</b>, P. Anderson, L. Gamberg, X. Zheng, and N. Sato, In preparation (2026)</li>
+          <li><b>R. M. Whitehill</b>, M. M. Dalton, T. Liu, W. Melnitchouk, J.-W. Qiu, and N. Sato, In preparation (2025)</li> 
+          <li>P. C. Barry, A. Prokudin, T. Anderson, C. Cocuzza, L. Gamberg, W. Melnitchouk, E. Moffat, D. Pitonyak, J.-W. Qiu, N. Sato, A. Vladimirov, and <b>R. M. Whitehill</b>, <a href="https://arxiv.org/pdf/2510.13771" target="_blank">arXiV:2510.13771 [hep-ph]</a></li>
+          <li>V. Mikuni, F. Ringer, N. Sato, F. Torales Acosta, and <b>R. M. Whitehill</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0370269325004551?via%3Dihub" target="_blank">Phys. Lett. B 868, 139694 (2025)</a>, <a href="https://arxiv.org/abs/2410.22421" target="_blank">arXiv:2410.22421 [hep-ph]</a></li>
+          <li>J. Karpie, <b>R. M. Whitehill</b>, W. Melnitchouk, C. Monahan, K. Originos, J.-W. Qiu, D. R. Richards, N. Sato, and S. Zafeiropoulos, <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.036031" target="_blank">Phys. Rev. D 109, 036031 (2024)</a>, <a href="https://arxiv.org/abs/2310.18179">arXiv:2310.18179 [hep-ph]</a></li>
+          <li>R. M. Whitehill, Y. Zhou, N. Sato, and W. Melnitchouk, <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.034033" target="_blank">Phys. Rev. D 107, 034033 (2023)</a>, <a href="https://arxiv.org/abs/2210.12295" target="_blank">arXiv:2210.12295 [hep-ph]</a></li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="dropdown-box">
+      <summary>Presentations</summary>
+      <div class="dropdown-content">
+        <p><i><u>May 2025</u></i>: QCD Evolution 2025 [<a href="slides/QCD_Evolution_2025.pdf" target="_blank">slides</a>]</p>
+        <p><i><u>March 2025</u></i>: Positron Workshop 2025 [<a href="slides/PWG_2025.pdf" target="_blank">slides</a>]</p>
+        <p><i><u>November 2024</u></i>: CTEQ Fall Meeting 2024 [<a href="slides/CTEQ_Fall_2024.pdf" target="_blank">slides</a>]</p>
+        <p><i><u>June 2024</u></i>: SoLID Opportunities and Challenges of Nuclear Physics at the Luminosity Frontier [<a href="slides/SoLID_2024.pdf" target="_blank">slides</a>]</p>
+        <p><i><u>June 2024</u></i>: Hampton University Graduate Studies Program [<a href="slides/HUGS_2024.pdf" target="_blank">slides</a>]</p>
+        <p><i><u>March 2023</u></i>: DIS2023: XXX International Workshop on Deep-Inelastic Scattering and Related Subjects [<a href="slides/DIS_2023.pdf">slides</a>]</p>
+        <p><i><u>September 2023</u></i>: CAM Seminar [<a href="slides/CAM_Seminar_2022.pdf" target="_blank">slides</a>]</p>
+        <p><i><u>March 2022</u></i>: WSU Physics Seminar [<a href="slides/WSU_Seminar_2022.pdf" target="_blank">slides</a>]</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- PERSONAL SECTION -->
+<section class="section-card" id="personal">
+  <h2>Personal</h2>
+  <p>(Content coming soon)</p>
+</section>
 
 </body>
 </html>
-
