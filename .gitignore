@@ -1,5 +1,56 @@
-_site
-.sass-cache
-.jekyll-cache
+# Generated site output and dependency caches
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+vendor/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Editor and IDE state
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# LaTeX build intermediates (keep source files and final PDFs tracked)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# Local temporary files, backups, and downloaded archives
+.cache/
+.tmp/
+tmp/
+*.bak
+*.orig
+*.temp
+*.tmp
+*.zip
