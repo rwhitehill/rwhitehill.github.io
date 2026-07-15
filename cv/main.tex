@@ -1,0 +1,387 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{changepage}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage[shortlabels]{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyfoot[C]{\thepage~of~\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{13.59999pt}
+\addtolength{\topmargin}{-1.59999pt}
+
+\usepackage{amsmath}
+% \setlength{\abovedisplayskip}{0pt}
+% \setlength{\belowdisplayskip}{0pt}
+% \setlength{\abovedisplayshortskip}{0pt}
+% \setlength{\belowdisplayshortskip}{0pt}
+
+% \definecolor{hrefcolor}{RGB}{255, 0, 255}
+\definecolor{hrefcolor}{RGB}{249, 132, 239}
+% \usepackage[colorlinks=true,urlcolor=hrefcolor]{hyperref}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+
+\usepackage{background}
+\usetikzlibrary{calc}
+\backgroundsetup{
+scale=1,
+angle=0,
+color=black,
+opacity=1,
+contents={
+\def\decthickness{0.075cm}
+\begin{tikzpicture}[overlay,remember picture]
+    \coordinate (upper left) at ([xshift=1cm,yshift=-1cm]current page.north west);
+    \draw[line width=\decthickness,line cap=round] ($(upper left)+(0.1\paperwidth,0)$) -- (upper left) -- ($(upper left)+(0,-0.1\paperwidth)$);
+    \coordinate (lower right) at ([xshift=-1cm,yshift=1cm]current page.south east);
+    \draw[line width=\decthickness,line cap=round] ($(lower right)+(-0.1\paperwidth,0)$) -- (lower right) -- ($(lower right)+(0,0.1\paperwidth)$);
+\end{tikzpicture}
+}
+}
+
+\def\tab{\hspace*{1em}}
+\setlength\parindent{0.0pt}
+
+% \def\citem{\item[$\circ$]}
+% \def\sitem{\item[$-$]}
+\def\ssep{\vspace*{0.5cm}}
+% \def\bline{\\[0.2cm]}
+\def\bline{\vspace*{0.2cm}}
+
+% \definecolor{datecolor}{RGB}{114, 189, 212}
+\definecolor{datecolor}{RGB}{58, 160, 191}
+\newcommand\datetf[2]{\texttt{#1\,--\,#2}}
+\newcommand\datei[1]{\texttt{#1}}
+
+\newenvironment{cvsection}[1]
+{
+{\LARGE #1} \hrulefill
+\vspace*{3ex}
+% \begin{adjustwidth}{1em}{0pt}
+}
+{
+% \end{adjustwidth}
+\vspace*{3ex}
+}
+
+%------------------------------------------------------------------------------------------%
+
+\begin{document}
+
+\begin{center}
+{\huge
+Richard Whitehill
+}
+\\[0.13cm]
+{
+\Large
+Curriculum Vitae
+}
+\\[0.1cm]
+(Updated \today)
+
+\vspace{0.5cm}
+
+\hrule
+\kern3pt
+\hrule
+\vspace*{0.4cm}
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+Old Dominion University \\
+Department of Physics \\
+4402 Elkhorn Ave, \\
+Norfolk, VA 23529 \\
+\end{center}
+\end{minipage}%
+\begin{minipage}[t]{0.5\linewidth}
+\begin{center}
+Thomas Jefferson National Accelerator Facility \\
+Theory Center \\
+12000 Jefferson Ave, \\
+Newport News, VA 23606
+\end{center}
+\end{minipage}
+% \vspace*{0.2cm}
+\begin{align*}
+    \text{Personal E-mail:}& ~ \text{\href{mailto:richard.whitehill@icloud.com}{richard.whitehill@icloud.com}} \\[-3pt]
+    \text{University E-mail:}& ~ \text{\href{mailto:rwhit058@odu.edu}{rwhit058@odu.edu}} \\[-3pt]
+    \text{JLab E-mail:}& ~ \text{\href{mailto:whiteric@jlab.org}{whiteric@jlab.org}} \\[-3pt]
+    \text{Telephone:}& ~ \text{+1 (316) 617-9199}
+\end{align*}
+% \vspace*{-0.4cm}
+\hrule
+\kern3pt
+\hrule
+
+\end{center}
+
+\vspace*{0.2cm}
+
+%===============%
+%   EDUCATION   %
+%===============%
+\begin{cvsection}{EDUCATION}
+
+\textbf{Old Dominion University [ODU]} \hfill \datetf{2023}{\phantom{2023}}
+\begin{itemize}[nosep,leftmargin=*]
+    \item[--] Ph.D. Student (GPA: 4.0/4.0)
+    \item[--] Research Assistant
+    \item[--] Supervision: Arkaitz Rodas-Bilbao, Nobuo Sato
+\end{itemize}
+%
+\bline
+%
+\textbf{Wichita State University [WSU]} \hfill \datetf{2020}{2023}
+\begin{itemize}[nosep,leftmargin=*]
+    \item[--] Bachelor's of Science (Summa Cum Laude, GPA: 3.985/4.0)
+    \item[--] Majors: Physics and Mathematics
+    \item[--] Minor: Computer Science
+    \item[--] Emory Lindquist Honors Scholar
+\end{itemize}
+%
+\bline
+%
+\textbf{Kansas Academy of Mathematics and Science [KAMS]} \hfill \datetf{2018}{2020}
+\begin{itemize}[nosep,leftmargin=*,label=$-$]
+    \item Two-year dual enrollment program at Fort Hays State University [FHSU]
+\end{itemize}
+%
+\bline
+%
+\textbf{Eisenhower High School} \hfill \datetf{2016}{2020}
+\begin{itemize}[nosep,leftmargin=*,label=$-$]
+    \item Summa Cum Laude (Rank: 1$^{\rm st}$ of 208)
+\end{itemize}
+
+\end{cvsection}
+
+%================%
+%   EMPLOYMENT   %
+%================%
+\begin{cvsection}{EMPLOYMENT}
+
+
+\textbf{Thomas Jefferson National Accelerator Facility}
+\begin{itemize}[nosep,leftmargin=*,label=$-$]
+    \item Undergraduate Student Research Intern \hfill \datetf{2021}{2023}
+    \item Science Undergraduate Laboratory Internship [SULI] \hfill \datei{2022}
+\end{itemize}
+%
+\bline
+%
+\textbf{Old Dominion University} \hfill \datei{2021}
+\begin{itemize}[nosep,leftmargin=*,label=$-$]
+    \item Research Experience for Undergraduates [REU]
+\end{itemize}
+%
+\bline
+%
+\textbf{FHSU PHYS 211L TA} \hfill \datetf{2019}{2020}
+
+\end{cvsection}
+
+%============%
+%   AWARDS   %
+%============%
+\begin{cvsection}{AWARDS}
+
+\begin{itemize}[nosep,leftmargin=*,label=$\circ$]
+
+\item DOE Office of Science Graduate Student Research (SCGSR) \hfill \datei{2026} \\ Program Fellowship
+\item JSA/JLab Graduate Fellowship \hfill \datetf{2025}{2026}
+\item Distinguished Performance on the Written Candidacy Exam \hfill \datei{2024}
+\item Brian Donald Diederich and Flavia Alexandra Osorhean Scholarship for \hfill \datei{2023} \\ Doctoral Research in Nuclear Physics
+
+\item University Fellowship (Temple University) \hfill \datei{2023}
+\begin{itemize}[nosep,leftmargin=*,label=$-$]
+    \item declined due to attending ODU
+\end{itemize}
+
+\item University Graduate Fellowship (Penn State University) \hfill \datei{2023}
+\begin{itemize}[nosep,leftmargin=*,label=$-$]
+    \item declined due to attending ODU
+\end{itemize}
+
+\item Rosalee and Alvin Sarachek Award for Scholarly Excellence in the \hfill \datei{2023} \\ Natural Sciences
+
+\item Dorothy and Bill Cohen Honors College Enhancement Scholarship \hfill \datei{2023}
+
+\item Wayne Pfeiffer Mathematics Endowed Scholarship \hfill \datei{2022}
+%
+\item Douglas A. Knight Memorial Scholarship \hfill \datei{2022}
+%
+\item Nelson S. Ladd Physics Scholarship \hfill \datetf{2021}{2022}
+%
+% \item National Hispanic Recognition Program Scholarship \hfill \datetf{2020}{2022} %\bline
+% \item Presidential Merit Scholarship \hfill \datei{2020} %\bline
+% \begin{itemize}[nosep,leftmargin=*,label=$-$]
+%     \item Declined due to accepting other award
+% \end{itemize}
+
+\item Spirit Aerosystems National Merit Scholar \hfill \datei{2020} %\bline
+\item College Board National Hispanic Recognition Program Scholar \hfill \datei{2020} %\bline
+\item WSU Dean's List
+\begin{itemize}[nosep,leftmargin=*,label=$-$]
+    \item Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022, Spring 2023
+\end{itemize}
+\item FHSU Dean's Honor Roll \hfill \datetf{2018}{2020}
+\begin{itemize}[nosep,leftmargin=*,label=$-$]
+    \item Fall 2018, Spring 2019, Fall 2019, Spring 2020
+\end{itemize}
+
+\end{itemize}
+
+\end{cvsection}
+
+% \newpage
+
+%=============%
+%   SERVICE   %
+%=============%
+\begin{cvsection}{SERVICE}
+
+\begin{itemize}[nosep,leftmargin=*,label=$\circ$]
+
+    \item Hampton Roads Science Ambassador Program \hfill \datei{2025}
+
+    \item Student Representative for KAMS Director Search Committee \hfill \datei{2020}
+    % \item KAMS ambassador \hfill \datei{2020}
+    % \begin{itemize}[nosep,leftmargin=*,label=$-$]
+    %     \item presented research to prospective students at information sessions and advocated for programs academic program
+    % \end{itemize}
+
+
+\end{itemize}
+
+\end{cvsection}
+
+
+%=======================%
+%   RESEARCH PROJECTS   %
+%=======================%
+% \begin{cvsection}{RESEARCH PROJECTS}
+
+% \begin{itemize}[nosep,leftmargin=*,label=$\circ$]
+% \item Impact of lattice data on the gluon helicity \hfill \datetf{2023}{\phantom{2023}}
+% \begin{itemize}[nosep,leftmargin=*,label=$-$]
+%     \item Supervision: Nobuo Sato and Joseph Karpie
+% \end{itemize}
+% \item Impact study of PVDIS on the unpolarized strange sea and weak mixing angle \hfill \datetf{2023}{\phantom{2023}}
+%     \begin{itemize}[nosep,leftmargin=*,label=$-$]
+%         \item Supervision: Nobuo Sato, Mark Dalton, Wally Melnitchouk, and Tianbo Liu
+%         \item GitHub: \href{https://github.com/QCDHUB/JLab22-apv}{https://github.com/QCDHUB/JLab22-apv}
+%     \end{itemize}
+% \item Accessing gluon polarization with high-$P_{T}$ hadrons in SIDIS \hfill \datetf{2021}{2022}
+%     \begin{itemize}[nosep,leftmargin=*,label=$-$]
+%         \item Supervision: Wally Melnitchouk and Nobuo Sato
+%         \item GitHub: \href{https://github.com/QCDHUB/analysis-psidis_qT}{https://github.com/QCDHUB/analysis-psidis\_qT}
+%         \item REU poster: \href{https://education.jlab.org/ugresearch/21-29.html}{https://education.jlab.org/ugresearch/21-29.html}
+%         \item SULI pressentation: \href{https://rwhitehill.github.io/SULI_poster-presentation.pdf}{https://rwhitehill.github.io/SULI\_poster-presentation.pdf}
+%     \end{itemize}
+% %
+% \item Developing perfectly matched layer method for heat-diffusion equation \hfill \datetf{2019}{2020}
+%     \begin{itemize}[nosep,leftmargin=*,label=$-$]
+%         \item Supervision: Clifton D. Clark
+%         \item SACAD poster: \href{https://scholars.fhsu.edu/sacad_2020/92/}{https://scholars.fhsu.edu/sacad\_2020/92/}
+%     \end{itemize}
+% %
+% \item Survey of projectile motion under gravitational, drag, and magnus forces \hfill \datetf{2018}{2020}
+%     \begin{itemize}[nosep,leftmargin=*,label=$-$]
+%         \item Supervision: Clifton D. Clark
+%         \item GitHub: \href{https://github.com/CD3/BaseballSimulator}{https://github.com/CD3/BaseballSimulator}
+%     \end{itemize}
+% \end{itemize}
+
+% \end{cvsection}
+
+%==============================%
+%   Seminars and Conferences   %
+%==============================%
+\begin{cvsection}{SEMINARS/CONFERENCES}
+
+\begin{itemize}[leftmargin=*,label=$\circ$]
+
+\item \textit{On the reconstruction of SIDIS
+observables in the Breit frame} \hfill \datei{May 2026} \\
+QCD Evolution 2026
+
+\item \textit{Phenomenological estimate for the
+longitudinal structure function in SIDIS} \hfill \datei{May 2026} \\
+DIS2026: 33$^{\rm rd}$ International Workshop on Deep Inelastic Scattering and Related Subjects
+
+\item \textit{Impact of PVDIS on the weak mixing
+angle and high-$x$ parton distributions} \hfill \datei{May 2026} \\
+DIS2026: 33$^{\rm rd}$ International Workshop on Deep Inelastic Scattering and Related Subjects
+
+\item \textit{Impact of parity-violating DIS on the nucleon
+strangeness and weak-mixing angle} \hfill \datei{May 2025} \\
+QCD Evolution 2025
+
+\item \textit{Exploring lepton-charge asymmetries and
+parity-violation in large-$p_T$ SIDIS} \hfill \datei{March 2025} \\
+Positron Working Group Workshop
+
+\item \textit{Impact of parity-violating DIS on the nucleon strangeness and weak mixing angle} \hfill \datei{November 2024} \\
+CTEQ Fall Meeting 2024
+
+\item \textit{Impact of PVDIS with 22 GeV electrons at JLab
+on the nucleon strangeness} \hfill \datei{June 2024} \\
+SoLID Opportunities and Challenges of Nuclear Physics at the Luminosity Frontier
+
+\item \textit{Impact of parity-violating DIS on the weak mixing angle and nucleon strangeness} \hfill \datei{June 2024} \\
+Hampton University Graduate Studies [HUGS] Program
+
+\item \textit{Accessing gluon polarization in large-$P_T$ SIDIS} \hfill \datei{March 2023} \\
+DIS2023: XXX International Workshop on Deep-Inelastic Scattering and Related Subjects
+
+\item \textit{Accessing Gluon Polarization in SIDIS} \hfill \datei{September 2022} \\
+Computational and Applied Mathematics Seminar
+
+% \item Forward QCD: open questions and future directions (University of Kansas) \hfill \datei{May 2022}
+%     \begin{itemize}[nosep,leftmargin=*,label=$-$]
+%         \item No talk given
+%     \end{itemize}
+
+\item \textit{Gluon Polarization in Large-$P_T$ SIDIS} \hfill \datei{March 2022} \\
+Wichita State University Physics Seminar
+
+\end{itemize}
+
+
+
+\end{cvsection}
+
+
+% %===========================%
+% %   CONFERENCES/WORKSHOPS   %
+% %===========================%
+% \begin{cvsection}{CONFERENCES/WORKSHOPS}
+
+% \begin{itemize}[nosep,leftmargin=*,label=$\circ$]
+%     \item Forward QCD: open questions and future directions (U. of Kansas) \hfill \datei{May 2022}
+%     \item DIS2023: XXX International Workshop on Deep-Inelastic Scattering \hfill \datei{March 2023} \\ and Related Subjects (Michigan State University)
+% \end{itemize}
+
+% \end{cvsection}
+
+%==================%
+%   PUBLICATIONS   %
+%==================%
+\begin{cvsection}{PUBLICATIONS}
+
+\input{publications.tex}
+
+\end{cvsection}
+
+
+
+\end{document}

@@ -1,0 +1,438 @@
+{
+  "hits": {
+    "hits": [
+      {
+        "id": "3172597",
+        "links": {
+          "bibtex": "https://inspirehep.net/api/literature/3172597?format=bibtex",
+          "latex-eu": "https://inspirehep.net/api/literature/3172597?format=latex-eu",
+          "latex-us": "https://inspirehep.net/api/literature/3172597?format=latex-us",
+          "json": "https://inspirehep.net/api/literature/3172597?format=json",
+          "json-expanded": "https://inspirehep.net/api/literature/3172597?format=json-expanded",
+          "cv": "https://inspirehep.net/api/literature/3172597?format=cv",
+          "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3172597"
+        },
+        "updated": "2026-06-29T21:59:39.441472+00:00",
+        "metadata": {
+          "citation_count": 1,
+          "authors": [
+            {
+              "full_name": "Whitehill, R.M."
+            },
+            {
+              "full_name": "Dalton, M.M."
+            },
+            {
+              "full_name": "Liu, T."
+            },
+            {
+              "full_name": "Melnitchouk, W."
+            },
+            {
+              "full_name": "Sato, N."
+            }
+          ],
+          "control_number": 3172597,
+          "titles": [
+            {
+              "source": "arXiv",
+              "title": "Impact of parity-violating deep-inelastic scattering on the weak mixing angle and high-$x$ parton distributions"
+            }
+          ],
+          "arxiv_eprints": [
+            {
+              "categories": [
+                "hep-ph"
+              ],
+              "value": "2606.26056"
+            }
+          ],
+          "earliest_date": "2026-06-24",
+          "document_type": [
+            "article"
+          ]
+        },
+        "created": "2026-06-25T04:25:34.839044+00:00"
+      },
+      {
+        "id": "3150607",
+        "links": {
+          "bibtex": "https://inspirehep.net/api/literature/3150607?format=bibtex",
+          "latex-eu": "https://inspirehep.net/api/literature/3150607?format=latex-eu",
+          "latex-us": "https://inspirehep.net/api/literature/3150607?format=latex-us",
+          "json": "https://inspirehep.net/api/literature/3150607?format=json",
+          "json-expanded": "https://inspirehep.net/api/literature/3150607?format=json-expanded",
+          "cv": "https://inspirehep.net/api/literature/3150607?format=cv",
+          "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3150607"
+        },
+        "updated": "2026-05-02T04:08:23.289755+00:00",
+        "metadata": {
+          "citation_count": 0,
+          "authors": [
+            {
+              "full_name": "Whitehill, Richard"
+            }
+          ],
+          "control_number": 3150607,
+          "titles": [
+            {
+              "source": "arXiv",
+              "title": "Mapping data sensitivities in global QCD analysis with linear response and influence functions"
+            }
+          ],
+          "arxiv_eprints": [
+            {
+              "categories": [
+                "hep-ph"
+              ],
+              "value": "2604.28154"
+            }
+          ],
+          "earliest_date": "2026-04-30",
+          "document_type": [
+            "article"
+          ]
+        },
+        "created": "2026-05-01T04:18:12.224355+00:00"
+      },
+      {
+        "id": "3069966",
+        "links": {
+          "bibtex": "https://inspirehep.net/api/literature/3069966?format=bibtex",
+          "latex-eu": "https://inspirehep.net/api/literature/3069966?format=latex-eu",
+          "latex-us": "https://inspirehep.net/api/literature/3069966?format=latex-us",
+          "json": "https://inspirehep.net/api/literature/3069966?format=json",
+          "json-expanded": "https://inspirehep.net/api/literature/3069966?format=json-expanded",
+          "cv": "https://inspirehep.net/api/literature/3069966?format=cv",
+          "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3069966"
+        },
+        "updated": "2026-06-15T13:15:43.360442+00:00",
+        "metadata": {
+          "citation_count": 17,
+          "authors": [
+            {
+              "full_name": "Barry, P.C."
+            },
+            {
+              "full_name": "Prokudin, A."
+            },
+            {
+              "full_name": "Anderson, T."
+            },
+            {
+              "full_name": "Cocuzza, C."
+            },
+            {
+              "full_name": "Gamberg, L."
+            },
+            {
+              "full_name": "Melnitchouk, W."
+            },
+            {
+              "full_name": "Moffat, E."
+            },
+            {
+              "full_name": "Pitonyak, D."
+            },
+            {
+              "full_name": "Qiu, J.-W."
+            },
+            {
+              "full_name": "Sato, N."
+            },
+            {
+              "full_name": "Vladimirov, A."
+            },
+            {
+              "full_name": "Whitehill, R.M."
+            }
+          ],
+          "control_number": 3069966,
+          "titles": [
+            {
+              "source": "arXiv",
+              "title": "First simultaneous analysis of transverse momentum dependent and collinear parton distributions in the proton"
+            }
+          ],
+          "arxiv_eprints": [
+            {
+              "categories": [
+                "hep-ph",
+                "hep-ex",
+                "hep-lat",
+                "nucl-th"
+              ],
+              "value": "2510.13771"
+            }
+          ],
+          "earliest_date": "2025-10-15",
+          "document_type": [
+            "article"
+          ]
+        },
+        "created": "2025-10-16T04:06:58.806045+00:00"
+      },
+      {
+        "id": "2843821",
+        "links": {
+          "bibtex": "https://inspirehep.net/api/literature/2843821?format=bibtex",
+          "latex-eu": "https://inspirehep.net/api/literature/2843821?format=latex-eu",
+          "latex-us": "https://inspirehep.net/api/literature/2843821?format=latex-us",
+          "json": "https://inspirehep.net/api/literature/2843821?format=json",
+          "json-expanded": "https://inspirehep.net/api/literature/2843821?format=json-expanded",
+          "cv": "https://inspirehep.net/api/literature/2843821?format=cv",
+          "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2843821"
+        },
+        "updated": "2025-11-30T16:09:03.883880+00:00",
+        "metadata": {
+          "publication_info": [
+            {
+              "journal_volume": "868",
+              "artid": "139694",
+              "material": "publication",
+              "year": 2025,
+              "journal_record": {
+                "$ref": "https://inspirehep.net/api/journals/1613966"
+              },
+              "journal_title": "Phys.Lett.B"
+            }
+          ],
+          "citation_count": 10,
+          "authors": [
+            {
+              "full_name": "Araz, Jack Y."
+            },
+            {
+              "full_name": "Mikuni, Vinicius"
+            },
+            {
+              "full_name": "Ringer, Felix"
+            },
+            {
+              "full_name": "Sato, Nobuo"
+            },
+            {
+              "full_name": "Acosta, Fernando Torales"
+            },
+            {
+              "full_name": "Whitehill, Richard"
+            }
+          ],
+          "control_number": 2843821,
+          "dois": [
+            {
+              "material": "publication",
+              "source": "Elsevier B.V.",
+              "value": "10.1016/j.physletb.2025.139694"
+            }
+          ],
+          "titles": [
+            {
+              "source": "Elsevier B.V.",
+              "title": "Point cloud-based diffusion models for the Electron-Ion Collider"
+            },
+            {
+              "source": "arXiv",
+              "title": "Point cloud-based diffusion models for the Electron-Ion Collider"
+            }
+          ],
+          "arxiv_eprints": [
+            {
+              "categories": [
+                "hep-ph",
+                "hep-ex"
+              ],
+              "value": "2410.22421"
+            }
+          ],
+          "earliest_date": "2024-10-29",
+          "document_type": [
+            "article"
+          ]
+        },
+        "created": "2024-10-31T06:19:49.142238+00:00"
+      },
+      {
+        "id": "2714843",
+        "links": {
+          "bibtex": "https://inspirehep.net/api/literature/2714843?format=bibtex",
+          "latex-eu": "https://inspirehep.net/api/literature/2714843?format=latex-eu",
+          "latex-us": "https://inspirehep.net/api/literature/2714843?format=latex-us",
+          "json": "https://inspirehep.net/api/literature/2714843?format=json",
+          "json-expanded": "https://inspirehep.net/api/literature/2714843?format=json-expanded",
+          "cv": "https://inspirehep.net/api/literature/2714843?format=cv",
+          "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2714843"
+        },
+        "updated": "2025-11-30T16:09:15.435931+00:00",
+        "metadata": {
+          "publication_info": [
+            {
+              "journal_volume": "109",
+              "artid": "036031",
+              "material": "publication",
+              "year": 2024,
+              "journal_record": {
+                "$ref": "https://inspirehep.net/api/journals/1613970"
+              },
+              "journal_issue": "3",
+              "journal_title": "Phys.Rev.D"
+            }
+          ],
+          "citation_count": 20,
+          "authors": [
+            {
+              "full_name": "Karpie, J."
+            },
+            {
+              "full_name": "Whitehill, R.M."
+            },
+            {
+              "full_name": "Melnitchouk, W."
+            },
+            {
+              "full_name": "Monahan, C."
+            },
+            {
+              "full_name": "Orginos, K."
+            },
+            {
+              "full_name": "Qiu, J.-W."
+            },
+            {
+              "full_name": "Richards, D.G."
+            },
+            {
+              "full_name": "Sato, N."
+            },
+            {
+              "full_name": "Zafeiropoulos, S."
+            }
+          ],
+          "control_number": 2714843,
+          "dois": [
+            {
+              "material": "publication",
+              "source": "APS",
+              "value": "10.1103/PhysRevD.109.036031"
+            }
+          ],
+          "arxiv_eprints": [
+            {
+              "categories": [
+                "hep-ph",
+                "hep-lat"
+              ],
+              "value": "2310.18179"
+            }
+          ],
+          "titles": [
+            {
+              "source": "APS",
+              "title": "Gluon helicity from global analysis of experimental data and lattice QCD Ioffe time distributions"
+            },
+            {
+              "source": "arXiv",
+              "title": "Gluon helicity from global analysis of experimental data and lattice QCD Ioffe time distributions"
+            }
+          ],
+          "earliest_date": "2023-10-27",
+          "document_type": [
+            "article"
+          ]
+        },
+        "created": "2023-10-30T02:39:01.148938+00:00"
+      },
+      {
+        "id": "2169578",
+        "links": {
+          "bibtex": "https://inspirehep.net/api/literature/2169578?format=bibtex",
+          "latex-eu": "https://inspirehep.net/api/literature/2169578?format=latex-eu",
+          "latex-us": "https://inspirehep.net/api/literature/2169578?format=latex-us",
+          "json": "https://inspirehep.net/api/literature/2169578?format=json",
+          "json-expanded": "https://inspirehep.net/api/literature/2169578?format=json-expanded",
+          "cv": "https://inspirehep.net/api/literature/2169578?format=cv",
+          "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2169578"
+        },
+        "updated": "2026-07-15T13:01:31.339422+00:00",
+        "metadata": {
+          "publication_info": [
+            {
+              "journal_volume": "107",
+              "artid": "034033",
+              "material": "publication",
+              "year": 2023,
+              "journal_record": {
+                "$ref": "https://inspirehep.net/api/journals/1613970"
+              },
+              "journal_issue": "3",
+              "journal_title": "Phys.Rev.D"
+            }
+          ],
+          "citation_count": 11,
+          "authors": [
+            {
+              "full_name": "Whitehill, R.M."
+            },
+            {
+              "full_name": "Zhou, Yiyu"
+            },
+            {
+              "full_name": "Sato, N."
+            },
+            {
+              "full_name": "Melnitchouk, W."
+            }
+          ],
+          "control_number": 2169578,
+          "dois": [
+            {
+              "material": "publication",
+              "source": "APS",
+              "value": "10.1103/PhysRevD.107.034033"
+            },
+            {
+              "material": "publication",
+              "source": "arXiv",
+              "value": "10.1103/PhysRevD.107.034033"
+            }
+          ],
+          "arxiv_eprints": [
+            {
+              "categories": [
+                "hep-ph",
+                "hep-ex",
+                "nucl-th"
+              ],
+              "value": "2210.12295"
+            }
+          ],
+          "titles": [
+            {
+              "source": "APS",
+              "title": "Accessing gluon polarization with high-<math display=\"inline\"><mrow><msub><mrow><mi>P</mi></mrow><mrow><mi>T</mi></mrow></msub></mrow></math> hadrons in SIDIS"
+            },
+            {
+              "source": "arXiv",
+              "title": "Accessing gluon polarization with high-$P_T$ hadrons in SIDIS"
+            }
+          ],
+          "earliest_date": "2022-10-21",
+          "document_type": [
+            "article"
+          ]
+        },
+        "created": "2022-10-25T02:49:57.557869+00:00"
+      }
+    ],
+    "total": 6
+  },
+  "links": {
+    "self": "https://inspirehep.net/api/literature/?sort=mostrecent&q=a%20Richard.M.Whitehill.1&size=50&page=1&fields=titles,authors.full_name,arxiv_eprints,publication_info,dois,earliest_date,citation_count,document_type",
+    "bibtex": "https://inspirehep.net/api/literature/?sort=mostrecent&q=a%20Richard.M.Whitehill.1&size=50&page=1&format=bibtex",
+    "latex-eu": "https://inspirehep.net/api/literature/?sort=mostrecent&q=a%20Richard.M.Whitehill.1&size=50&page=1&format=latex-eu",
+    "latex-us": "https://inspirehep.net/api/literature/?sort=mostrecent&q=a%20Richard.M.Whitehill.1&size=50&page=1&format=latex-us",
+    "json": "https://inspirehep.net/api/literature/?sort=mostrecent&q=a%20Richard.M.Whitehill.1&size=50&page=1&fields=titles,authors.full_name,arxiv_eprints,publication_info,dois,earliest_date,citation_count,document_type&format=json",
+    "json-expanded": "https://inspirehep.net/api/literature/?sort=mostrecent&q=a%20Richard.M.Whitehill.1&size=50&page=1&format=json-expanded",
+    "cv": "https://inspirehep.net/api/literature/?sort=mostrecent&q=a%20Richard.M.Whitehill.1&size=50&page=1&format=cv"
+  }
+}

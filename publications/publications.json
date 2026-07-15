@@ -1,0 +1,222 @@
+{
+  "generated_at": "2026-07-15T14:55:53.706774+00:00",
+  "profile": {
+    "inspire_author_id": "2169579",
+    "inspire_bai": "Richard.M.Whitehill.1",
+    "orcid": "0000-0001-5007-2473",
+    "display_name": "Richard M. Whitehill"
+  },
+  "publications": [
+    {
+      "id": "wip-breit-frame",
+      "title": "On the reconstruction of SIDIS observables in the Breit frame",
+      "authors": [
+        "R. M. Whitehill",
+        "P. Anderson",
+        "L. Gamberg",
+        "W. Melnitchouk",
+        "N. Sato",
+        "X. Zheng"
+      ],
+      "status": "In preparation",
+      "year": 2026,
+      "sort_date": "2026-12-31",
+      "source": "manual",
+      "title_latex": null,
+      "journal": null,
+      "arxiv": null,
+      "arxiv_category": null,
+      "doi": null,
+      "inspire_id": null,
+      "citations": null,
+      "updated": null
+    },
+    {
+      "id": "wip-longitudinal-sidis",
+      "title": "Phenomenological estimates of the unpolarized longitudinal structure function in SIDIS",
+      "authors": [
+        "A. Bacchetta",
+        "M. Cerutti",
+        "L. Gamberg",
+        "R. M. Whitehill"
+      ],
+      "status": "In preparation",
+      "year": 2026,
+      "sort_date": "2026-11-30",
+      "source": "manual",
+      "title_latex": null,
+      "journal": null,
+      "arxiv": null,
+      "arxiv_category": null,
+      "doi": null,
+      "inspire_id": null,
+      "citations": null,
+      "updated": null
+    },
+    {
+      "id": "wip-independent-scales",
+      "title": "What are the consequences of independent factorization and renormalization scales?",
+      "authors": [
+        "T. C. Rogers",
+        "R. M. Whitehill"
+      ],
+      "status": "In preparation",
+      "year": 2026,
+      "sort_date": "2026-10-31",
+      "source": "manual",
+      "title_latex": null,
+      "journal": null,
+      "arxiv": null,
+      "arxiv_category": null,
+      "doi": null,
+      "inspire_id": null,
+      "citations": null,
+      "updated": null
+    },
+    {
+      "id": "3172597",
+      "source": "inspire",
+      "title": "Impact of parity-violating deep-inelastic scattering on the weak mixing angle and high-x parton distributions",
+      "title_latex": "Impact of parity-violating deep-inelastic scattering on the weak mixing angle and high-$x$ parton distributions",
+      "authors": [
+        "R. M. Whitehill",
+        "M. M. Dalton",
+        "T. Liu",
+        "W. Melnitchouk",
+        "N. Sato"
+      ],
+      "year": 2026,
+      "sort_date": "2026-06-24",
+      "status": "Preprint",
+      "journal": null,
+      "arxiv": "2606.26056",
+      "arxiv_category": "hep-ph",
+      "doi": null,
+      "inspire_id": "3172597",
+      "citations": 1,
+      "updated": "2026-06-29T21:59:39.441472+00:00"
+    },
+    {
+      "id": "3150607",
+      "source": "inspire",
+      "title": "Mapping data sensitivities in global QCD analysis with linear response and influence functions",
+      "title_latex": null,
+      "authors": [
+        "R. M. Whitehill"
+      ],
+      "year": 2026,
+      "sort_date": "2026-04-30",
+      "status": "Submitted to Phys. Lett. B",
+      "journal": null,
+      "arxiv": "2604.28154",
+      "arxiv_category": "hep-ph",
+      "doi": null,
+      "inspire_id": "3150607",
+      "citations": 0,
+      "updated": "2026-05-02T04:08:23.289755+00:00"
+    },
+    {
+      "id": "3069966",
+      "source": "inspire",
+      "title": "First simultaneous analysis of transverse momentum dependent and collinear parton distributions in the proton",
+      "title_latex": null,
+      "authors": [
+        "P. C. Barry",
+        "A. Prokudin",
+        "T. Anderson",
+        "C. Cocuzza",
+        "L. Gamberg",
+        "W. Melnitchouk",
+        "E. Moffat",
+        "D. Pitonyak",
+        "J.-W. Qiu",
+        "N. Sato",
+        "A. Vladimirov",
+        "R. M. Whitehill"
+      ],
+      "year": 2025,
+      "sort_date": "2025-10-15",
+      "status": "Submitted to Phys. Rev. Lett.",
+      "journal": null,
+      "arxiv": "2510.13771",
+      "arxiv_category": "hep-ph",
+      "doi": null,
+      "inspire_id": "3069966",
+      "citations": 17,
+      "updated": "2026-06-15T13:15:43.360442+00:00"
+    },
+    {
+      "id": "2843821",
+      "source": "inspire",
+      "title": "Point cloud-based diffusion models for the Electron-Ion Collider",
+      "title_latex": null,
+      "authors": [
+        "J. Y. Araz",
+        "V. Mikuni",
+        "F. Ringer",
+        "N. Sato",
+        "F. Torales Acosta",
+        "R. M. Whitehill"
+      ],
+      "year": 2025,
+      "sort_date": "2024-10-29",
+      "status": "Phys. Lett. B 868, 139694 (2025)",
+      "journal": "Phys. Lett. B 868, 139694 (2025)",
+      "arxiv": "2410.22421",
+      "arxiv_category": "hep-ph",
+      "doi": "10.1016/j.physletb.2025.139694",
+      "inspire_id": "2843821",
+      "citations": 10,
+      "updated": "2025-11-30T16:09:03.883880+00:00"
+    },
+    {
+      "id": "2714843",
+      "source": "inspire",
+      "title": "Gluon helicity from global analysis of experimental data and lattice QCD Ioffe time distributions",
+      "title_latex": null,
+      "authors": [
+        "J. Karpie",
+        "R. M. Whitehill",
+        "W. Melnitchouk",
+        "C. Monahan",
+        "K. Orginos",
+        "J.-W. Qiu",
+        "D. G. Richards",
+        "N. Sato",
+        "S. Zafeiropoulos"
+      ],
+      "year": 2024,
+      "sort_date": "2023-10-27",
+      "status": "Phys. Rev. D 109, 036031 (2024)",
+      "journal": "Phys. Rev. D 109, 036031 (2024)",
+      "arxiv": "2310.18179",
+      "arxiv_category": "hep-ph",
+      "doi": "10.1103/PhysRevD.109.036031",
+      "inspire_id": "2714843",
+      "citations": 20,
+      "updated": "2025-11-30T16:09:15.435931+00:00"
+    },
+    {
+      "id": "2169578",
+      "source": "inspire",
+      "title": "Accessing gluon polarization with high-P_T hadrons in SIDIS",
+      "title_latex": "Accessing gluon polarization with high-$P_T$ hadrons in SIDIS",
+      "authors": [
+        "R. M. Whitehill",
+        "Y. Zhou",
+        "N. Sato",
+        "W. Melnitchouk"
+      ],
+      "year": 2023,
+      "sort_date": "2022-10-21",
+      "status": "Phys. Rev. D 107, 034033 (2023)",
+      "journal": "Phys. Rev. D 107, 034033 (2023)",
+      "arxiv": "2210.12295",
+      "arxiv_category": "hep-ph",
+      "doi": "10.1103/PhysRevD.107.034033",
+      "inspire_id": "2169578",
+      "citations": 11,
+      "updated": "2026-07-15T13:01:31.339422+00:00"
+    }
+  ]
+}

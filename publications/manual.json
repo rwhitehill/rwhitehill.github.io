@@ -1,0 +1,65 @@
+{
+  "profile": {
+    "inspire_author_id": "2169579",
+    "inspire_bai": "Richard.M.Whitehill.1",
+    "orcid": "0000-0001-5007-2473",
+    "display_name": "Richard M. Whitehill"
+  },
+  "works_in_progress": [
+    {
+      "id": "wip-breit-frame",
+      "title": "On the reconstruction of SIDIS observables in the Breit frame",
+      "authors": [
+        "R. M. Whitehill",
+        "P. Anderson",
+        "L. Gamberg",
+        "W. Melnitchouk",
+        "N. Sato",
+        "X. Zheng"
+      ],
+      "status": "In preparation",
+      "year": 2026,
+      "sort_date": "2026-12-31"
+    },
+    {
+      "id": "wip-longitudinal-sidis",
+      "title": "Phenomenological estimates of the unpolarized longitudinal structure function in SIDIS",
+      "authors": [
+        "A. Bacchetta",
+        "M. Cerutti",
+        "L. Gamberg",
+        "R. M. Whitehill"
+      ],
+      "status": "In preparation",
+      "year": 2026,
+      "sort_date": "2026-11-30"
+    },
+    {
+      "id": "wip-independent-scales",
+      "title": "What are the consequences of independent factorization and renormalization scales?",
+      "authors": [
+        "T. C. Rogers",
+        "R. M. Whitehill"
+      ],
+      "status": "In preparation",
+      "year": 2026,
+      "sort_date": "2026-10-31"
+    }
+  ],
+  "overrides": {
+    "3172597": {
+      "title": "Impact of parity-violating deep-inelastic scattering on the weak mixing angle and high-x parton distributions",
+      "title_latex": "Impact of parity-violating deep-inelastic scattering on the weak mixing angle and high-$x$ parton distributions"
+    },
+    "3150607": {
+      "status": "Submitted to Phys. Lett. B"
+    },
+    "3069966": {
+      "status": "Submitted to Phys. Rev. Lett."
+    },
+    "2169578": {
+      "title": "Accessing gluon polarization with high-P_T hadrons in SIDIS",
+      "title_latex": "Accessing gluon polarization with high-$P_T$ hadrons in SIDIS"
+    }
+  }
+}
